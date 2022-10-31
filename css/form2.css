@@ -1,0 +1,46 @@
+.input {
+  color: #333;
+  font-size: 1.2rem;
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 90%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+.placeholder {
+  font-size: 1.2rem;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+  transform: translateY(0rem);
+}
+.input:placeholder-shown + .placeholder {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+
+.submit {
+  background-color: #08d;
+  border-radius: 12px;
+  border: 0;
+  box-sizing: border-box;
+  color: #eee;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  margin-left: 36rem;
+  text-align: center;
+  width: 10%;
+}
+
+.submit:active {
+  background-color: #06b;
+}
